@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🎨 Configuração Global */
+:root {
+  --background: #f8f9fa;
+  --foreground: #212529;
+  --primary: #4f46e5;
+  --secondary: #6366f1;
+  --accent: #ec4899;
+  --muted: #6b7280;
+}
+
+/* 🖥️ Reset de CSS e Melhorias Globais */
+* {
+  @apply box-border p-0 m-0;
+}
+
+body {
+  @apply bg-background text-foreground font-sans antialiased leading-relaxed;
+}
+
+/* 🛠️ Ajustando Links */
+a {
+  @apply text-primary hover:underline;
+}
+
+/* 🎨 Botões Padrão */
+.btn {
+  @apply px-4 py-2 rounded-md font-semibold transition duration-200;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-secondary;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white hover:bg-primary;
+}
+
+/* 📜 Títulos e Textos */
+h1 {
+  @apply text-3xl font-bold;
+}
+
+h2 {
+  @apply text-2xl font-semibold;
+}
+
+h3 {
+  @apply text-xl font-medium;
+}
+
+/* 📦 Containers e Layouts */
+.container {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+/* 📱 Estilos para Inputs e Formulários */
+input,
+textarea {
+  @apply w-full px-3 py-2 border rounded-md focus:ring focus:ring-primary outline-none;
+}
+
+label {
+  @apply block text-sm font-medium text-foreground;
+}
